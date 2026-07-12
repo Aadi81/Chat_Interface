@@ -1,0 +1,60 @@
+:root {
+  --text: #2f2b36;
+  --text-muted: #6b6375;
+  --bg: #f4f2f7;
+  --surface: #ffffff;
+  --border: #e5e4e7;
+  --accent: #7c3aed;
+  --accent-soft: rgba(124, 58, 237, 0.12);
+  --bubble-own: #7c3aed;
+  --bubble-own-text: #ffffff;
+  --bubble-other: #f0edf5;
+  --bubble-other-text: #2f2b36;
+  --success: #22c55e;
+
+  font: 16px/145% system-ui, 'Segoe UI', Roboto, sans-serif;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #e5e2ea;
+    --text-muted: #9ca3af;
+    --bg: #14141a;
+    --surface: #1e1e26;
+    --border: #2e303a;
+    --accent: #a78bfa;
+    --accent-soft: rgba(167, 139, 250, 0.15);
+    --bubble-own: #7c3aed;
+    --bubble-own-text: #ffffff;
+    --bubble-other: #2a2a34;
+    --bubble-other-text: #e5e2ea;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+input {
+  font: inherit;
+}
